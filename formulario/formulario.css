@@ -103,9 +103,10 @@ fieldset.grupo .campo {
 }
 
 .botao:hover {
-    background: #ffffff;
+    background: #f759a3;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
+
 }
 
 .botao, select{
