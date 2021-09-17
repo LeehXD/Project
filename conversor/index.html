@@ -9,26 +9,32 @@
 </head>
 <body>
 
-    <div class="container">
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de moedas
+    </h1>
+    <p class="page-subtitle">
+      Descubra os valores em Real R$
+    </p>
 
-        <h1 class="page-title">
-          Conversor de moedas
-        </h1>
-
-        <p class="page-subtitle">
-          Descubra os valores em dolar U$
-        </p>
-    
-        <label for="moeda">Insira o valor</label>
-        <br>
-
-        <input type="number" id="valor" size="2" />
-        <br>
-
-        <button type="submit" onclick="Converter()">Converter</button>
-
-        <h2 id="valorConvertido"></h2>
-
+    <div class="card">
+      <div class="MoedaMM">
+        <p>Selecione a moeda</p>
+        <select id="moeda">
+          <option value="0" selected></option>
+          <option value="1">Dolar</option>
+          <option value="2">Euro</option>
+          <option value="3">Libra</option>
+          <option value="4">BTC</option>
+        </select>
       </div>
+      <label for="moeda">Insira o valor</label><br>
+      <input type="number" id="valor" size="2" /><br>
+      <button type="submit" onclick="update()">Converter</button>
+      <h2 id="valorConvertido"></h2>
+    </div>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
 </body>
 </html>
